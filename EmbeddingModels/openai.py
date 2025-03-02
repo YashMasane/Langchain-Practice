@@ -5,6 +5,7 @@ load_dotenv()
 
 embeddings = OpenAIEmbeddings(model='text-embedding-3-large', dimensions=32)
 
+# embedding for a single query
 result = embeddings.embed_query("Mumbai is the capital of Maharashtra and it is financial capital\
                                 of Indai also")
 
